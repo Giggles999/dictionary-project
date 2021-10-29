@@ -27,10 +27,13 @@ export default function Dictionary () {
 
     return (
         <div className="Dictionary">
-            <form onSubmit={search}>
-                <input type="search" onChange= {handleKeywordChange} />
-        </form>
-        
+          <form onSubmit={search}>
+          <p className="h4 text-center py-2">Search Word Below</p>
+            <input type="search" id="defaultFormCardNameEx" className="form-control" onChange= {handleKeywordChange} />
+        </form>   
+        <div className="d-grid gap-2"><button className="btn btn-primary">Submit button doesn't work yet - click Enter for now :)</button></div>
+                
+
         <Results results={results} />
     </div>
     );
