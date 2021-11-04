@@ -8,7 +8,6 @@ export default function Dictionary () {
     let [results, setResults] = useState (null);
 
     function handleResponse (response) {
-        console.log (response.data[0]);
         setResults(response.data[0]);
     }
 
@@ -28,10 +27,10 @@ export default function Dictionary () {
     return (
         <div className="Dictionary">
           <form onSubmit={search}>
-          <p className="h4 text-center py-2">Search Word Below</p>
+          <p className="h4 text-center py-2">Search Word</p>
             <input type="search" id="defaultFormCardNameEx" className="form-control" onChange= {handleKeywordChange} />
         </form>   
-        <div className="d-grid gap-2"><button className="btn btn-primary">Submit button doesn't work yet - click Enter for now :)</button></div>
+        <div className="d-grid gap-2"><button className="btn btn-primary" >Submit button doesn't work yet - click Enter for now :)</button></div>
                 
 
         <Results results={results} />
