@@ -12,7 +12,7 @@ export default function App () {
 
       </header>
     <main>
-      <Dictionary defaultKeyword="sunset"/>
+      <Dictionary defaultKeyword="backpacking"/>
 
       </main>
     
