@@ -3,6 +3,8 @@
   min-height: 100vh;
   display: flex;
   color: white;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .App-header {
