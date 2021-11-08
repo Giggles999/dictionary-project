@@ -12,12 +12,12 @@ export default function App () {
 
       </header>
     <main>
-      <Dictionary/>
+      <Dictionary defaultKeyword="sunset"/>
 
       </main>
     
       <footer className="App-footer">
-      <small> Open Source Coded by <a href="https://github.com/Giggles999/dictionary-project">Lynn Mach</a></small>
+      <small> Open Source Coded by <a href="https://github.com/Giggles999/dictionary-project" target="blank">Lynn Mach</a></small>
       </footer>
     </div>
 </div>

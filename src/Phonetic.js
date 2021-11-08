@@ -1,17 +1,20 @@
 import React from "react";
-import ReactAudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
+import ReactPlayer from 'react-player';
+import "./Phonetics.css";
 
 export default function Phonetic(props) {
     return (
       <span className="Phonetic">
         {props.phonetic.text}
-        <div>
-          <ReactAudioPlayer 
-          src={props.phonetic.audio} 
-          />
-
-        </div>
+      
+      <ReactPlayer
+      url={props.phonetic.audio} 
+      width="400px"
+      height="50px"
+      playing={false}
+      controls={true}
+      number="1.0"
+    />  
       </span>
     );
 }
